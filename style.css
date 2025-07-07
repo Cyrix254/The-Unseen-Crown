@@ -1,0 +1,339 @@
+/* style.css */
+
+/* Base styles */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f9f9f9;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3 {
+    color: #1a1a40;
+    font-weight: bold;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #1a1a40;
+    transform: background-color 0.3s ease;
+  }
+
+  .navbar-brand{
+    text-decoration: none;
+    color: #f5b942;
+    display: flex;
+    font-size: 20px;
+  }
+  .navbar-brand img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f5b942;
+    background-color: #000;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Header */
+  #home {
+    padding: 80px 0;
+    background: linear-gradient(to bottom right, #1a1a40, #3d3d5c);
+    color: white;
+    text-align: center;
+    background-image: url(book\ cover.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #home .btn {
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 2px;
+    color: #f5b942;
+    text-decoration: none;
+    background-color: black;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+  }
+
+  #home .btn:hover{
+    background-color: rgb(116, 8, 89);
+    transform: scale(1.05);
+  }
+  
+  #home img {
+    max-width: 300px;
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  #home img:hover {
+    transform: scale(1.05);
+  }
+
+  #home h1{
+    font-size: 50px;
+    color:#f5b942;
+  }
+
+  #home h3{
+    color: chartreuse;
+    font-family: Georgia, 'Times New Roman', Times, serif
+  }
+  
+  /* About */
+#about {
+  padding: 80px 0;
+  background-color: papayawhip;
+  text-align: center;
+}
+
+#about img {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #1a1a40;
+}
+
+#about .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced hover effect */
+}
+
+.synopsis-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #about .card {
+    margin: 0 auto;
+  }
+
+  .synopsis-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  #about img {
+    max-width: 150px; /* Smaller image size for mobile */
+  }
+}
+  /* Synopsis */
+#synopsis {
+  background-color: #f1f1f1;
+  padding: 80px 0;
+}
+
+#synopsis h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1a1a40;
+  margin-bottom: 40px;
+}
+
+#synopsis .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#synopsis .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced hover effect */
+}
+
+.synopsis-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+#synopsis ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+#synopsis ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #1a1a40;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .synopsis-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  #synopsis h2 {
+    font-size: 1.5rem;
+  }
+}
+  
+  
+  
+  /* Contact Form */
+#contact-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  font-family: 'Roboto', sans-serif;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Focus effect */
+  outline: none;
+}
+
+#contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Social Media Icons */
+.social-media {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  gap: 20px; /* Space between icons */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.social-icon {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  gap: 10px; /* Space between icon and text */
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 25px; /* Adjust text size */
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon i {
+  font-size: 20px; /* Adjust icon size */
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Specific Colors for Icons */
+.social-icon.whatsapp {
+  background-color: #25d366;
+}
+
+.social-icon.instagram {
+  background-color: #e4405f;
+}
+
+.social-icon.linkedin {
+  background-color: #0077b5;
+}
+
+.social-icon.facebook {
+  background-color: #3b5998;
+}
+
+.social-icon.github {
+  background-color: #333;
+}
+
+.social-icon.tiktok {
+  background-color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-media {
+    gap: 15px; /* Reduce spacing between icons */
+  }
+
+  .social-icon {
+    font-size: 14px; /* Smaller text size for smaller screens */
+    gap: 8px; /* Reduce gap between icon and text */
+  }
+
+  .social-icon i {
+    font-size: 18px; /* Adjust icon size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .social-media {
+    flex-direction: column; /* Stack icons vertically on very small screens */
+    align-items: center;
+  }
+
+  .social-icon {
+    width: 40%; /* Make icons take full width */
+    text-align: center; /* Center text inside icons */
+    gap: 5px; /* Reduce gap between icon and text */
+  }
+}
